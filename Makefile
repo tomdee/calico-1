@@ -1,7 +1,7 @@
 # jekyll 3.4 has some permissions issue on semaphore, so stick with 3.2 for now.
 
 serve:
-	docker run --rm -p 4000:4000 -v $$PWD:/srv/jekyll jekyll/jekyll:3.2
+	docker run --rm -p 4000:4000 -v $$PWD:/srv/jekyll jekyll/jekyll:3.2 jekyll serve -c _config.yml,_config.dev.yml
 
 # Be careful - this doesn't specify all the deps
 _site:
