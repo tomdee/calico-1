@@ -1,1 +1,1 @@
-{% assign component = (site.data.versions[page.version].first.components | where:"name", "calico/node" | first) %}{{ component.version}}
+{% assign component = (site.data.versions[page.version].first.components | where:"name", include.for | first) %}{{ component.version}}

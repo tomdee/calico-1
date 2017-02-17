@@ -1,4 +1,4 @@
 ---
 layout: nil
 ---
-calico/node:{% include version for="calico_node" %}
+calico/node:{% include version for="calico/node" %}
