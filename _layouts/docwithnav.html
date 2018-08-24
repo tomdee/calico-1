@@ -8,24 +8,20 @@ to set two variables:
 The code is a little roundabout for a few reasons:
   - liquid doesn't provide a simple way to create an empty array,
   so we just split an empty string.
-  - liquid stores the navbars (in site.data[version].navbars) as
+  - liquid stores the navbars (in site.data.navbars) as
   a list keyed by the filename. We don't really care about the filename
   here, so we just need the data field. But, liquid doesn't provide a
   simple way to 'iteritems', so we have to manually loop through and access
   the  2nd item.
-  - liquid also has a bug where it truncates after first `.` of a directory
-  name in _data (i.e. _data/v0.1 will be stored as data.v0). Until that
-  bug's fixed, we store version data in _data/v0_1 and do a string replace
-  to find the right data.
 {% endcomment %}
 
-{% assign current_page = page.path | replace_first: page.version,"" | split: "/" %}
-{% assign current_page = current_page[1] | prepend: "/" %}
+{% assign current_page = page.path | split: "/" %}
+{% assign current_page = current_page[0] | prepend: "/" %}
 
-{% capture version %}{{ page.version | replace: ".","_" }}{% endcapture %}
 
 {% assign unsorted_navbars = "" | split:"|" %}
-{% for navbars_hashmap in site.data[version].navbars %}
+{% for navbars_hashmap in site.data.navbars %}
+
   {% assign navbar = navbars_hashmap[1] %}
   {% assign unsorted_navbars = unsorted_navbars | push: navbar %}
   {% assign navbar_size = navbar.path | size %}
@@ -34,7 +30,6 @@ The code is a little roundabout for a few reasons:
   {% endif %}
 {% endfor %}
 {% assign navbars = unsorted_navbars | sort:"order" %}
-
 
 <!Doctype html>
 <html lang="en">
@@ -114,14 +109,14 @@ The code is a little roundabout for a few reasons:
               <ul class="nav navbar-nav navbar-right">
                 {% for navbar in navbars %}
                   <li {% if this_pages_navbar == navbar %} class="active"{% endif %}>
-                    <a href="{{site.baseurl}}/{{page.version}}{{navbar.path}}">{{ navbar.bigheader }}</a>
+                    <a href="{{site.baseurl}}{{navbar.path}}">{{ navbar.bigheader }}</a>
                   </li>
                 {% endfor %}
               </ul>
             </form>
             <ul class="visible-xs nav navbar-nav navbar-right">
              <li class="dropdown">
-               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Version ({% if page.version == 'master' %}nightly{% else %}{{page.version}}{% endif %})<span class="caret"></span></a>
+               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Version {{site.version}}<span class="caret"></span></a>
                <ul class="dropdown-menu">
                  <li><a href="{{site.baseurl}}/v3.2/introduction">v3.2 (latest)</a></li>
                  <li><a href="{{site.baseurl}}/v3.1/introduction">v3.1</a></li>
@@ -147,11 +142,11 @@ The code is a little roundabout for a few reasons:
             <ul class="nav navbar-nav">
               {% for navbar in navbars %}
                 <li{% if this_pages_navbar == navbar %} class="active"{% endif %}>
-                  <a href="{{site.baseurl}}/{{page.version}}{{navbar.path}}"><span>{{ navbar.bigheader }}</span></a>
+                  <a href="{{site.baseurl}}{{navbar.path}}"><span>{{ navbar.bigheader }}</span></a>
                 </li>
               {% endfor %}
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Version ({% if page.version == 'master' %}nightly{% else %}{{page.version}}{% endif %})<span class="caret"></span></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Version {{site.version}}<span class="caret"></span></a>
                 <ul class="dropdown-menu">
                    <li><a href="{{site.baseurl}}/v3.2/introduction">v3.2 (latest)</a></li>
                    <li><a href="{{site.baseurl}}/v3.1/introduction">v3.1</a></li>
