@@ -18,7 +18,7 @@ complete the following steps.
 
    ```
    kubectl apply -f \
-   {{site.url}}/{{page.version}}/getting-started/kubernetes/installation/hosted/rbac-kdd.yaml
+   {{site.url}}/getting-started/kubernetes/installation/hosted/rbac-kdd.yaml
    ```
    > **Note**: You can also
    > [view the manifest in your browser](hosted/rbac-kdd.yaml){:target="_blank"}.
@@ -36,7 +36,7 @@ complete the following steps.
 
    ```bash
    curl \
-   {{site.url}}/{{page.version}}/getting-started/kubernetes/installation/hosted/kubernetes-datastore/policy-only/1.7/calico.yaml \
+   {{site.url}}/getting-started/kubernetes/installation/hosted/kubernetes-datastore/policy-only/1.7/calico.yaml \
    -O
    ```
 

@@ -282,7 +282,7 @@ If provided, these IP pools will override any IP pools specified in the CNI conf
 > **Note**: This requires the IP pools to exist before `ipv4pools` or
 > `ipv6pools` annotations are used. Requesting a subset of an IP pool
 > is not supported. IP pools requested in the annotations must exactly
-> match a configured [IPPool]({{site.baseurl}}/{{page.version}}/reference/calicoctl/resources/ippool) resource.
+> match a configured [IPPool]({{site.baseurl}}/reference/calicoctl/resources/ippool) resource.
 {: .alert .alert-info}
 
 

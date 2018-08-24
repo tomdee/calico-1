@@ -34,7 +34,7 @@ section that matches your type.
 
    ```
    kubectl apply -f \
-   {{site.url}}/{{page.version}}/getting-started/kubernetes/installation/hosted/canal/rbac.yaml
+   {{site.url}}/getting-started/kubernetes/installation/hosted/canal/rbac.yaml
    ```
    > **Note**: You can also
    > [view the manifest in your browser](hosted/canal/rbac.yaml){:target="_blank"}.
@@ -44,7 +44,7 @@ section that matches your type.
 
    ```bash
    kubectl apply -f \
-   {{site.url}}/{{page.version}}/getting-started/kubernetes/installation/hosted/canal/canal.yaml
+   {{site.url}}/getting-started/kubernetes/installation/hosted/canal/canal.yaml
    ```
 
    > **Note**: You can also [view the manifest in your browser](hosted/canal/canal.yaml){:target="_blank"}.
@@ -63,7 +63,7 @@ etcd, complete the following steps.
 
    ```
    kubectl apply -f \
-   {{site.url}}/{{page.version}}/getting-started/kubernetes/installation/hosted/canal/rbac-etcd.yaml
+   {{site.url}}/getting-started/kubernetes/installation/hosted/canal/rbac-etcd.yaml
    ```
    > **Note**: You can also
    > [view the manifest in your browser](hosted/canal/rbac-etcd.yaml){:target="_blank"}.
@@ -73,7 +73,7 @@ etcd, complete the following steps.
 
    ```bash
    curl \
-   {{site.url}}/{{page.version}}/getting-started/kubernetes/installation/hosted/canal/canal-etcd.yaml \
+   {{site.url}}/getting-started/kubernetes/installation/hosted/canal/canal-etcd.yaml \
    -O
    ```
 

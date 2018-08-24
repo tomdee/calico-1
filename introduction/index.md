@@ -21,7 +21,7 @@ you can achieve fine-grained control over communications
 between containers, virtual machine workloads, and
 bare metal host endpoints.
 
-Proven in production at scale, {{site.prodname}} {{page.version}} features
+Proven in production at scale, {{site.prodname}} {{site.version}} features
 integrations with Kubernetes, OpenShift, and OpenStack.
 
 > **Note**: For integrations with the  Mesos, DC/OS, and Docker
@@ -32,17 +32,17 @@ integrations with Kubernetes, OpenShift, and OpenStack.
 
 <div class="row">
   <div class="col-xs-6 col-md-3">
-    <a href="/{{page.version}}/getting-started/kubernetes/" class="thumbnail">
+    <a href="/getting-started/kubernetes/" class="thumbnail">
       <img src="{{site.baseurl}}/images/kubernetes-button.svg" alt="Kubernetes" width="40%">
     </a>
   </div>
   <div class="col-xs-6 col-md-3">
-    <a href="/{{page.version}}/getting-started/openshift/installation" class="thumbnail">
+    <a href="/getting-started/openshift/installation" class="thumbnail">
       <img src="{{site.baseurl}}/images/openshift-button.svg" alt="OpenShift" width="35%">
     </a>
   </div>
   <div class="col-xs-6 col-md-3">
-    <a href="/{{page.version}}/getting-started/openstack/" class="thumbnail">
+    <a href="/getting-started/openstack/" class="thumbnail">
       <img src="{{site.baseurl}}/images/openstack-button.svg" alt="OpenStack" width="40%">
     </a>
   </div>

@@ -5,13 +5,13 @@ canonical_url: 'https://docs.projectcalico.org/v3.2/reference/calicoctl/commands
 
 This sections describes the `calicoctl replace` command.
 
-Read the [calicoctl command line interface user reference]({{site.baseurl}}/{{page.version}}/reference/calicoctl/) 
+Read the [calicoctl command line interface user reference]({{site.baseurl}}/reference/calicoctl/) 
 for a full list of calicoctl commands.
 
 > **Note**: The available actions for a specific resource type may be 
 > limited based on the datastore used for {{site.prodname}} (etcdv3 / Kubernetes API). 
 > Please refer to the 
-> [Resources section]({{site.baseurl}}/{{page.version}}/reference/calicoctl/resources/)
+> [Resources section]({{site.baseurl}}/reference/calicoctl/resources/)
 > for details about each resource type.
 {: .alert .alert-info}
 
@@ -105,8 +105,8 @@ Failed to replace any 'policy' resources: resource does not exist: Policy(name=d
 
 ## See also
 
--  [Resources]({{site.baseurl}}/{{page.version}}/reference/calicoctl/resources/) for details on all valid resources, including file format
+-  [Resources]({{site.baseurl}}/reference/calicoctl/resources/) for details on all valid resources, including file format
    and schema
--  [NetworkPolicy]({{site.baseurl}}/{{page.version}}/reference/calicoctl/resources/networkpolicy) for details on the {{site.prodname}} selector-based policy model
--  [calicoctl configuration]({{site.baseurl}}/{{page.version}}/reference/calicoctl/setup) for details on configuring `calicoctl` to access
+-  [NetworkPolicy]({{site.baseurl}}/reference/calicoctl/resources/networkpolicy) for details on the {{site.prodname}} selector-based policy model
+-  [calicoctl configuration]({{site.baseurl}}/reference/calicoctl/setup) for details on configuring `calicoctl` to access
    the {{site.prodname}} datastore.

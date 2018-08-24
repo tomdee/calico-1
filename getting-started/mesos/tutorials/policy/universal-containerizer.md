@@ -4,7 +4,7 @@ canonical_url: 'https://docs.projectcalico.org/v2.6/getting-started/mesos/tutori
 ---
 
 This document will demonstrate how to manipulate policy for {{site.prodname}} using
-[Policies]({{site.baseurl}}/{{page.version}}/reference/calicoctl/resources/networkpolicy). Specifically, we will:
+[Policies]({{site.baseurl}}/reference/calicoctl/resources/networkpolicy). Specifically, we will:
 
 - Set labels on our workload at launch
 - Configure policy based off these labels
@@ -24,7 +24,7 @@ Then, we will launch basic curl task which will repeatedly curl the webserver.
 When launching tasks, assign arbitrary `labels` in the task's `ipAddress` field.
 These labels will be passed to {{site.prodname}}'s CNI plugin which will store them in the
 Labels field of the corresponding
-[workload endpoint]({{site.baseurl}}/{{page.version}}/reference/calicoctl/resources/workloadendpoint#definitions).
+[workload endpoint]({{site.baseurl}}/reference/calicoctl/resources/workloadendpoint#definitions).
 
 ```json
 {
@@ -97,7 +97,7 @@ EOF
 ```
 
 > **Note**: You'll need `calicoctl` configured to access your central etcd datastore. 
-> See [help](/{{page.version}}/reference/calicoctl/setup/etcdv3).
+> See [help](/reference/calicoctl/setup/etcdv3).
 {: .alert .alert-info}
 
 Checking the task's log should show that these connections are no longer successful.

@@ -87,8 +87,8 @@ on each agent:
 1. Download {{site.prodname}}'s CNI plugin binaries:
 
    ```shell
-   curl -L -o /opt/mesosphere/active/cni/calico  {{site.data.versions[page.version].first.components["calico/cni"].download_calico_url}}
-   curl -L -o /opt/mesosphere/active/cni/calico-ipam {{site.data.versions[page.version].first.components["calico/cni"].download_calico_ipam_url}}
+   curl -L -o /opt/mesosphere/active/cni/calico  {{site.data.versions.first.components["calico/cni"].download_calico_url}}
+   curl -L -o /opt/mesosphere/active/cni/calico-ipam {{site.data.versions.first.components["calico/cni"].download_calico_ipam_url}}
    ```
 
 2. Create a standard {{site.prodname}} CNI network configuration:

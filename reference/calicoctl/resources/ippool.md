@@ -6,7 +6,7 @@ canonical_url: 'https://docs.projectcalico.org/v3.2/reference/calicoctl/resource
 An IP pool resource (`IPPool`) represents a collection of IP addresses from which {{site.prodname}} expects
 endpoint IPs to be assigned.
 
-For `calicoctl` [commands]({{site.baseurl}}/{{page.version}}/reference/calicoctl/commands/) that specify a resource type on the CLI, the following
+For `calicoctl` [commands]({{site.baseurl}}/reference/calicoctl/commands/) that specify a resource type on the CLI, the following
 aliases are supported (all case insensitive): `ippool`, `ippools`, `ipp`, `ipps`, `pool`, `pools`.
 
 ### Sample YAML
@@ -47,7 +47,7 @@ subnet. The subnet of each node is configured on the node resource (which may be
 determined when running the `{{site.nodecontainer}}` service).
 
 For details on configuring IP-in-IP on your deployment, please read the
-[Configuring IP-in-IP guide]({{site.baseurl}}/{{page.version}}/usage/configuration/ip-in-ip).
+[Configuring IP-in-IP guide]({{site.baseurl}}/usage/configuration/ip-in-ip).
 
 
 > **Note**: Setting `natOutgoing` is recommended on any IP Pool with `ipip` enabled.

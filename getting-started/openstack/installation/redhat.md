@@ -6,7 +6,7 @@ canonical_url: 'https://docs.projectcalico.org/v3.2/getting-started/openstack/in
 These instructions will take you through a first-time install of
 {{site.prodname}}.  If you are upgrading an existing system, please see
 [{{site.prodname}} on OpenStack
-upgrade]({{site.baseurl}}/{{page.version}}/getting-started/openstack/upgrade)
+upgrade]({{site.baseurl}}/getting-started/openstack/upgrade)
 instead.
 
 There are three sections to the install: installing etcd, adding
@@ -293,7 +293,7 @@ On each compute node, perform the following steps:
     You also need to configure your route reflector to allow connections from
     the compute node as a route reflector client.  If you are using BIRD as a
     route reflector, follow the instructions in [Configuring BIRD as a BGP
-    route reflector]({{site.baseurl}}/{{page.version}}/usage/routereflector/bird-rr-config). If
+    route reflector]({{site.baseurl}}/usage/routereflector/bird-rr-config). If
     you are using another route reflector, refer to the appropriate
     instructions to configure a client connection.
 

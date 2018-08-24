@@ -8,7 +8,7 @@ you want to install the binary.
 1. Use the following command to download the `calicoctl` binary.
 
    ```
-   curl -O -L {{site.data.versions[page.version].first.components.calicoctl.download_url}}
+   curl -O -L {{site.data.versions.first.components.calicoctl.download_url}}
    ```
 
 1. Set the file to be executable.

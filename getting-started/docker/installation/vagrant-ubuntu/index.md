@@ -66,10 +66,10 @@ it is time to launch `{{site.nodecontainer}}`.
 
 The Vagrant machines already have `calicoctl` installed. Use it to launch `{{site.nodecontainer}}`:
 
-    sudo ETCD_ENDPOINTS=http://172.17.8.101:2379 calicoctl node run --node-image={{site.imageNames["node"]}}:{{site.data.versions[page.version].first.title}}
+    sudo ETCD_ENDPOINTS=http://172.17.8.101:2379 calicoctl node run --node-image={{site.imageNames["node"]}}:{{site.data.versions.first.title}}
 
 Append the `--use-docker-networking-container-labels` flag to the `calicoctl node run` command if you're combining
-[Docker Labels and {{site.prodname}} Policy]({{site.baseurl}}/{{page.version}}/getting-started/docker/tutorials/security-using-docker-labels-and-calico-policy).
+[Docker Labels and {{site.prodname}} Policy]({{site.baseurl}}/getting-started/docker/tutorials/security-using-docker-labels-and-calico-policy).
 
 Check that the `{{site.nodecontainer}}` container is running on this host:
 
@@ -79,12 +79,12 @@ You should see output like this on each node
 
     vagrant@calico-01:~$ docker ps
     CONTAINER ID        IMAGE                        COMMAND             CREATED             STATUS              PORTS               NAMES
-    408bd2b9ba53        {{site.imageNames["node"]}}:{{site.data.versions[page.version].first.title}}   "start_runit"       About an hour ago   Up About an hour                        {{site.noderunning}}
+    408bd2b9ba53        {{site.imageNames["node"]}}:{{site.data.versions.first.title}}   "start_runit"       About an hour ago   Up About an hour                        {{site.noderunning}}
 
 ## Next Steps
 
 Now that you have a basic two node Ubuntu cluster setup, see
-[Security using {{site.prodname}} Profiles]({{site.baseurl}}/{{page.version}}/getting-started/docker/tutorials/security-using-calico-profiles)
+[Security using {{site.prodname}} Profiles]({{site.baseurl}}/getting-started/docker/tutorials/security-using-calico-profiles)
 
 [libnetwork]: https://github.com/docker/libnetwork
 [experimental-channel]: https://github.com/docker/docker/tree/master/experimental

@@ -6,9 +6,9 @@ canonical_url: 'https://docs.projectcalico.org/v3.2/getting-started/bare-metal/i
 
 ## Prerequisites
 
-- [Install calicoctl as a binary](/{{page.version}}/usage/calicoctl/install#installing-calicoctl-as-a-binary-on-a-single-host).
+- [Install calicoctl as a binary](/usage/calicoctl/install#installing-calicoctl-as-a-binary-on-a-single-host).
 
-- [Configure calicoctl to connect to etcd](/{{page.version}}/usage/calicoctl/configure/).
+- [Configure calicoctl to connect to etcd](/usage/calicoctl/configure/).
 
 
 ## Installing Felix

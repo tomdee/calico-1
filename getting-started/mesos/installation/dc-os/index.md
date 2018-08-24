@@ -95,8 +95,8 @@ To perform networking on Unified Containerizer tasks, {{site.prodname}}'s CNI bi
 configuration file must be installed on every agent, and the slave process must
 be restarted to pick up the change. The Framework then performs the following steps:
 
-1. Download [`calico`]({{site.data.versions[page.version].first.components["calico/cni"].download_calico_url}}) to `/opt/mesosphere/active/cni/`
-2. Download [`calico-ipam`]({{site.data.versions[page.version].first.components["calico/cni"].download_calico_ipam_url}}) to `/opt/mesosphere/active/cni/`
+1. Download [`calico`]({{site.data.versions.first.components["calico/cni"].download_calico_url}}) to `/opt/mesosphere/active/cni/`
+2. Download [`calico-ipam`]({{site.data.versions.first.components["calico/cni"].download_calico_ipam_url}}) to `/opt/mesosphere/active/cni/`
 3. Create the following JSON file at `/opt/mesosphere/etc/dcos/network/cni/calico.cni`:
 
    ```json
@@ -122,4 +122,4 @@ This task ensures the {{site.prodname}}'s core process `{{site.nodecontainer}}` 
 
 ## Next Steps: Installing
 
-For installation instructions, see [The {{site.prodname}} DC/OS Install Guide]({{site.baseurl}}/{{page.version}}/getting-started/mesos/installation/dc-os/framework)
+For installation instructions, see [The {{site.prodname}} DC/OS Install Guide]({{site.baseurl}}/getting-started/mesos/installation/dc-os/framework)

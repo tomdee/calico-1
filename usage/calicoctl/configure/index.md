@@ -30,9 +30,9 @@ file, it will check a specific set of environment variables.
 Refer to the section that corresponds to your datastore type for a full set of options 
 and examples.
 
-- [etcd datastore](/{{page.version}}/usage/calicoctl/configure/etcd)
+- [etcd datastore](/usage/calicoctl/configure/etcd)
 
-- [Kubernetes API datastore](/{{page.version}}/usage/calicoctl/configure/kdd)
+- [Kubernetes API datastore](/usage/calicoctl/configure/kdd)
 
 > **Note**: When running `calicoctl` inside a container, any environment variables and 
 > configuration files must be passed to the container so they are available to 

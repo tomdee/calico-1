@@ -19,8 +19,8 @@ repositories.
 
 | Artifact | Type | Description |
 |---------|-------|-----------|
-| calico/node | Docker Image |  The Docker image used to run Felix and the BIRD BGP agent (for distributing routes between hosts).  See [calico/node reference]({{site.baseurl}}/{{page.version}}/reference/architecture/components) for details. |
-| calicoctl | Binary | The command line tool for interacting with the Calico API.  See [calicoctl reference]({{site.baseurl}}/{{page.version}}/reference/calicoctl) for more info. |
+| calico/node | Docker Image |  The Docker image used to run Felix and the BIRD BGP agent (for distributing routes between hosts).  See [calico/node reference]({{site.baseurl}}/reference/architecture/components) for details. |
+| calicoctl | Binary | The command line tool for interacting with the Calico API.  See [calicoctl reference]({{site.baseurl}}/reference/calicoctl) for more info. |
 
 ## Libraries
 

@@ -13,40 +13,40 @@ calico.yaml acccepts the following include flags:
 
 {% endcomment -%}
 {% capture variant_name %}{% if include.network == "flannel" %}Canal{% else %}Calico{% endif %}{% endcapture -%}
-# {{variant_name}} Version {{site.data.versions[page.version].first.title}}
-# {{site.url}}/{{page.version}}/releases#{{site.data.versions[page.version].first.title}}
+# {{variant_name}} Version {{site.data.versions.first.title}}
+# {{site.url}}/releases#{{site.data.versions.first.title}}
 # This manifest includes the following component versions:
-#   {{site.nodecontainer}}:{{site.data.versions[page.version].first.components["calico/node"].version}}
-#   calico/cni:{{site.data.versions[page.version].first.components["calico/cni"].version}}
+#   {{site.nodecontainer}}:{{site.data.versions.first.components["calico/node"].version}}
+#   calico/cni:{{site.data.versions.first.components["calico/cni"].version}}
 {%- if include.datastore == "etcd" %}
-#   calico/kube-controllers:{{site.data.versions[page.version].first.components["calico/kube-controllers"].version}}
+#   calico/kube-controllers:{{site.data.versions.first.components["calico/kube-controllers"].version}}
 {%- endif %}
 {%- if include.network == "flannel" %}
-#   coreos/flannel:{{site.data.versions[page.version].first.components["flannel"].version}}
+#   coreos/flannel:{{site.data.versions.first.components["flannel"].version}}
 {%- endif %}
 
-{% include {{page.version}}/manifests/calico-config.yaml datastore=include.datastore network=include.network calico_ipam=include.calico_ipam variant_name=variant_name typha=include.typha %}
+{% include manifests/calico-config.yaml datastore=include.datastore network=include.network calico_ipam=include.calico_ipam variant_name=variant_name typha=include.typha %}
 ---
 
 {% if include.datastore == "etcd" %}
-{% include {{page.version}}/manifests/calico-etcd-secrets.yaml %}
+{% include manifests/calico-etcd-secrets.yaml %}
 ---
 {%- elsif include.datastore == "kdd" and include.typha == "true" %}
-{% include {{page.version}}/manifests/calico-typha.yaml %}
+{% include manifests/calico-typha.yaml %}
 ---
 {%- endif %}
 
-{% include {{page.version}}/manifests/calico-node.yaml datastore=include.datastore network=include.network ipip=include.ipip variant_name=variant_name typha=include.typha app_layer_policy=include.app_layer_policy %}
+{% include manifests/calico-node.yaml datastore=include.datastore network=include.network ipip=include.ipip variant_name=variant_name typha=include.typha app_layer_policy=include.app_layer_policy %}
 ---
 {%- if include.datastore == "etcd" and include.network == "flannel" %}
 
-{% include {{page.version}}/manifests/configure-canal.yaml %}
+{% include manifests/configure-canal.yaml %}
 ---
 {%- endif %}
 {%- if include.datastore == "etcd" %}
 
-{% include {{page.version}}/manifests/calico-kube-controllers.yaml variant_name=variant_name %}
+{% include manifests/calico-kube-controllers.yaml variant_name=variant_name %}
 {%- elsif include.datastore == "kdd" %}
 
-{% include {{page.version}}/manifests/kdd-crds.yaml network=include.network %}
+{% include manifests/kdd-crds.yaml network=include.network %}
 {%- endif -%}

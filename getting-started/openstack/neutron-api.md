@@ -6,7 +6,7 @@ canonical_url: 'https://docs.projectcalico.org/v3.2/getting-started/openstack/ne
 When running in an OpenStack deployment, {{site.prodname}} receives and interprets
 certain Neutron API actions, in order to program those actions down into
 the network. However, because {{site.prodname}} is substantially simpler than much
-of what Neutron generally allows (see [External Connectivity]({{site.baseurl}}/{{page.version}}/getting-started/openstack/connectivity)) and because it's a purely layer 3 model (see [The {{site.prodname}} Datapath]({{site.baseurl}}/{{page.version}}/reference/architecture/data-path), not all Neutron API calls will have the same effect as they would with other backends.
+of what Neutron generally allows (see [External Connectivity]({{site.baseurl}}/getting-started/openstack/connectivity)) and because it's a purely layer 3 model (see [The {{site.prodname}} Datapath]({{site.baseurl}}/reference/architecture/data-path), not all Neutron API calls will have the same effect as they would with other backends.
 
 This document will go into detail on the full range of Neutron API
 calls, and will discuss the effect they have on the network. It uses the
@@ -38,7 +38,7 @@ In {{site.prodname}}, because all traffic is L3 and routed, the role of Neutron
 network as L2 connectivity domain is not helpful. Therefore, in {{site.prodname}},
 Neutron networks are simply containers for subnets. Best practices for
 operators configuring Neutron networks in {{site.prodname}} deployments can be
-found in [this document]({{site.baseurl}}/{{page.version}}/getting-started/openstack/connectivity#opens-external-conn-setup).
+found in [this document]({{site.baseurl}}/getting-started/openstack/connectivity#opens-external-conn-setup).
 
 It is not useful for non-administrator tenants to create their own
 Neutron networks. Although {{site.prodname}} will allow non-administrator tenants
@@ -54,7 +54,7 @@ Extended Attributes: Provider Networks
 
 Neutron Provider networks are not used in {{site.prodname}} deployments. Setting
 provider network extended attributes will have no effect. See
-[this document]({{site.baseurl}}/{{page.version}}/getting-started/openstack/connectivity) to understand why Neutron provider networks are not
+[this document]({{site.baseurl}}/getting-started/openstack/connectivity) to understand why Neutron provider networks are not
 needed.
 
 ## Subnets
@@ -67,7 +67,7 @@ subnets associated with it. Each Neutron subnet represents either an
 IPv4 or IPv6 block of addresses.
 
 Best practices for configuring Neutron subnets in {{site.prodname}} deployments can
-be found [here]({{site.baseurl}}/{{page.version}}/getting-started/openstack/connectivity#opens-external-conn-setup).
+be found [here]({{site.baseurl}}/getting-started/openstack/connectivity#opens-external-conn-setup).
 
 In {{site.prodname}}, these roles for the Neutron subnet are preserved in their
 entirety. All properties associated with these Neutron subnets are
@@ -114,7 +114,7 @@ apply to the other attributes:
 Neutron quotas function unchanged.
 
 In most deployments we recommend setting non-administrator tenant quotas
-for almost all Neutron objects to zero. For more information, see [here]({{site.baseurl}}/{{page.version}}/getting-started/openstack/connectivity#opens-external-conn-setup).
+for almost all Neutron objects to zero. For more information, see [here]({{site.baseurl}}/getting-started/openstack/connectivity#opens-external-conn-setup).
 
 ## Security Groups
 
@@ -133,14 +133,14 @@ All the attributes of security groups remain unchanged in {{site.prodname}}.
 ## Floating IPs
 
 Floating IPs are supported at beta level. For more information, see [this
-document]({{site.baseurl}}/{{page.version}}/usage/openstack/floating-ips).
+document]({{site.baseurl}}/usage/openstack/floating-ips).
 
 ## Neutron Routers
 
 Calico provides connectivity by default between all Neutron networks,
 regardless of whether there are Router objects between them in the Neutron data
 model.  See [this
-document]({{site.baseurl}}/{{page.version}}/usage/openstack/semantics) for a
+document]({{site.baseurl}}/usage/openstack/semantics) for a
 fuller explanation.  Where isolation of a particular Neutron network is
 desired, we recommend expressing that through security group rules.
 
@@ -173,7 +173,7 @@ When launching instances, remember that security groups are used to
 determine reachability, not networks. Choose networks based on whether
 you need an external or an internal IP address, and choose security
 groups based on the machines you'd like to talk to in the cloud. See
-[here]({{site.baseurl}}/{{page.version}}/getting-started/openstack/connectivity) for more.
+[here]({{site.baseurl}}/getting-started/openstack/connectivity) for more.
 
 #### Tab: Compute -&gt; Access & Security
 
@@ -202,7 +202,7 @@ purpose in a {{site.prodname}} network. See [Layer 3 Routing](#routers) for more
 In the course of general operation administrators are not expected to
 make changes to their networking configuration. However, for initial
 network setup, this panel may be used to make changes. See
-[this document]({{site.baseurl}}/{{page.version}}/getting-started/openstack/connectivity) for details on how to achieve this setup.
+[this document]({{site.baseurl}}/getting-started/openstack/connectivity) for details on how to achieve this setup.
 
 #### Tab: System Panel -&gt; Routers
 

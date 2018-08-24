@@ -3,11 +3,11 @@ title: Releases
 canonical_url: https://docs.projectcalico.org/v3.2/releases/
 ---
 
-The following table shows component versioning for Calico  **{{ page.version }}**.
+The following table shows component versioning for Calico  **{{ site.version }}**.
 
 Use the version selector at the top-right of this page to view a different release.
 
-{% for release in site.data.versions[page.version] %}
+{% for release in site.data.versions[site.version] %}
 ## {{ release.title }}
 {% unless release.title == "master" %}
 [Release archive](https://github.com/projectcalico/calico/releases/download/{{ release.title }}/release-{{ release.title }}.tgz) with Kubernetes manifests, Docker images and binaries.
@@ -16,7 +16,7 @@ Use the version selector at the top-right of this page to view a different relea
 {% if release.note %}
 {{ release.note }}
 {% else %}
-{% include {{page.version}}/release-notes/{{release.title}}-release-notes.md %}
+{% include release-notes/{{release.title}}-release-notes.md %}
 {% endif %}
 
 | Component              | Version |

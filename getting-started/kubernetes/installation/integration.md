@@ -51,14 +51,14 @@ done using the `calicoctl` utility.
 
 ```
 # Download and install calicoctl
-wget {{site.data.versions[page.version].first.components.calicoctl.download_url}}
+wget {{site.data.versions.first.components.calicoctl.download_url}}
 sudo chmod +x calicoctl
 
 # Run the {{site.nodecontainer}} container
-sudo ETCD_ENDPOINTS=http://<ETCD_IP>:<ETCD_PORT> ./calicoctl node run --node-image={{site.imageNames["node"]}}:{{site.data.versions[page.version].first.title}}
+sudo ETCD_ENDPOINTS=http://<ETCD_IP>:<ETCD_PORT> ./calicoctl node run --node-image={{site.imageNames["node"]}}:{{site.data.versions.first.title}}
 ```
 
-See the [`calicoctl node run` documentation]({{site.baseurl}}/{{page.version}}/reference/calicoctl/commands/node/)
+See the [`calicoctl node run` documentation]({{site.baseurl}}/reference/calicoctl/commands/node/)
 for more information.
 
 ### Example systemd unit file ({{site.noderunning}}.service)
@@ -90,7 +90,7 @@ ExecStart=/usr/bin/docker run --net=host --privileged --name={{site.noderunning}
   -v /var/run/calico:/var/run/calico \
   -v /var/log/calico:/var/log/calico \
   -v /var/lib/calico:/var/lib/calico \
-  {{site.imageNames["node"]}}:{{site.data.versions[page.version].first.title}}
+  {{site.imageNames["node"]}}:{{site.data.versions.first.title}}
 ExecStop=/usr/bin/docker rm -f {{site.noderunning}}
 Restart=always
 RestartSec=10
@@ -115,8 +115,8 @@ The Kubernetes `kubelet` should be configured to use the `calico` and `calico-ip
 Download the binaries and make sure they're executable.
 
 ```bash
-wget -N -P /opt/cni/bin {{site.data.versions[page.version].first.components["calico/cni"].download_calico_url}}
-wget -N -P /opt/cni/bin {{site.data.versions[page.version].first.components["calico/cni"].download_calico_ipam_url}}
+wget -N -P /opt/cni/bin {{site.data.versions.first.components["calico/cni"].download_calico_url}}
+wget -N -P /opt/cni/bin {{site.data.versions.first.components["calico/cni"].download_calico_ipam_url}}
 chmod +x /opt/cni/bin/calico /opt/cni/bin/calico-ipam
 ```
 
@@ -148,7 +148,7 @@ EOF
 Replace `<ETCD_IP>:<ETCD_PORT>` with your etcd configuration.
 Replace `</PATH/TO/KUBECONFIG>` with your kubeconfig file. See [Kubernetes kubeconfig](http://kubernetes.io/docs/user-guide/kubeconfig-file/) for more information about kubeconfig.
 
-For more information on configuring the {{site.prodname}} CNI plugins, see the [configuration guide]({{site.baseurl}}/{{page.version}}/reference/cni-plugin/configuration)
+For more information on configuring the {{site.prodname}} CNI plugins, see the [configuration guide]({{site.baseurl}}/reference/cni-plugin/configuration)
 
 ### Install standard CNI loopback plugin
 
@@ -189,7 +189,7 @@ calico-kube-controllers                  1/1       Running   0          1m
 ```
 
 For more information on how to configure the controllers,
-see the [configuration guide]({{site.baseur}}/{{page.version}}/reference/kube-controllers/configuration).
+see the [configuration guide]({{site.baseur}}/reference/kube-controllers/configuration).
 
 ## Role-based access control (RBAC)
 
@@ -204,7 +204,7 @@ The following YAML file defines the necessary API permissions required by {{site
 when using the etcd datastore.
 
 ```
-kubectl apply -f {{site.url}}/{{page.version}}/getting-started/kubernetes/installation/rbac.yaml
+kubectl apply -f {{site.url}}/getting-started/kubernetes/installation/rbac.yaml
 ```
 
 [Click here to view the above yaml directly.](rbac.yaml)

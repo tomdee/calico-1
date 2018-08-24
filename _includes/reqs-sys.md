@@ -19,7 +19,7 @@
 
 ## Key/value store
 
-{{site.prodname}} {{page.version}} requires a key/value store accessible by all
+{{site.prodname}} {{site.version}} requires a key/value store accessible by all
 {{site.prodname}} components. {% if include.orch == "Kubernetes" %} On Kubernetes,
 you can configure {{site.prodname}} to access an etcdv3 cluster directly or to
 use the Kubernetes API datastore.{% endif %}{% if include.orch == "OpenShift" %} On

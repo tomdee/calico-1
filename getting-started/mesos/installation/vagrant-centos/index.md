@@ -60,7 +60,7 @@ For Windows, see <https://github.com/nickryand/vagrant-multi-putty>.
 ## 5. Next Steps
 
 With your cluster deployed, you can follow the
-[tutorials on using {{site.prodname}} with Mesos]({{site.baseurl}}/{{page.version}}/getting-started/mesos#tutorials).
+[tutorials on using {{site.prodname}} with Mesos]({{site.baseurl}}/getting-started/mesos#tutorials).
 
 [virtualbox]: https://www.virtualbox.org/
 [vagrant]: https://www.vagrantup.com/

@@ -38,24 +38,24 @@ The sections that follow discuss the configurable parameters in greater depth.
 
 ### Configuring the pod IP range
 
-{{site.prodname}} IPAM assigns IP addresses from [IP pools]({{site.baseurl}}/{{page.version}}/reference/calicoctl/resources/ippool).
+{{site.prodname}} IPAM assigns IP addresses from [IP pools]({{site.baseurl}}/reference/calicoctl/resources/ippool).
 
 To change the default IP range used for pods, modify the `CALICO_IPV4POOL_CIDR`
 section of the `calico.yaml` manifest.  For more information, see
-[Configuring {{site.nodecontainer}}]({{site.baseurl}}/{{page.version}}/reference/node/configuration).
+[Configuring {{site.nodecontainer}}]({{site.baseurl}}/reference/node/configuration).
 
 ### Configuring IP-in-IP
 
 By default, the manifests enable IP-in-IP encapsulation across subnets. Many users may
 want to disable IP-in-IP encapsulation, such as under the following circumstances.
 
-- Their cluster is [running in a properly configured AWS VPC]({{site.baseurl}}/{{page.version}}/reference/public-cloud/aws).
+- Their cluster is [running in a properly configured AWS VPC]({{site.baseurl}}/reference/public-cloud/aws).
 - All their Kubernetes nodes are connected to the same layer 2 network.
 - They intend to use BGP peering to make their underlying infrastructure aware of
   pod IP addresses.
 
 To disable IP-in-IP encapsulation, modify the `CALICO_IPV4POOL_IPIP` section of the
-manifest.  For more information, see [Configuring {{site.nodecontainer}}]({{site.baseurl}}/{{page.version}}/reference/node/configuration).
+manifest.  For more information, see [Configuring {{site.nodecontainer}}]({{site.baseurl}}/reference/node/configuration).
 
 ### Configuring etcd
 
@@ -74,19 +74,19 @@ The following table outlines the supported `ConfigMap` options for etcd:
 
 To use these manifests with a TLS-enabled etcd cluster you must do the following:
 
-1. Download the {{page.version}} manifest that corresponds to your installation method.
+1. Download the {{site.version}} manifest that corresponds to your installation method.
 
    **{{site.prodname}} for policy and networking**
    ```bash
    curl \
-   {{site.url}}/{{page.version}}/getting-started/kubernetes/installation/hosted/calico.yaml \
+   {{site.url}}/getting-started/kubernetes/installation/hosted/calico.yaml \
    -O
    ```
 
    **{{site.prodname}} for policy and flannel for networking**
    ```bash
    curl \
-   {{site.url}}/{{page.version}}/getting-started/kubernetes/installation/hosted/canal/canal.yaml \
+   {{site.url}}/getting-started/kubernetes/installation/hosted/canal/canal.yaml \
    -O
    ```
 
@@ -207,7 +207,7 @@ Add a new container to the template.
 
 ```
       - name: dikastes
-        image: {{site.imageNames["dikastes"]}}:{{site.data.versions[page.version].first.components["calico/dikastes"].version}}
+        image: {{site.imageNames["dikastes"]}}:{{site.data.versions.first.components["calico/dikastes"].version}}
         args: ["/dikastes", "server", "-l", "/var/run/dikastes/dikastes.sock", "-d", "/var/run/felix/nodeagent/socket", "--debug"]
         volumeMounts:
         - mountPath: /var/run/dikastes

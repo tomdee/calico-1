@@ -63,7 +63,7 @@ docker run --privileged --net=host -d                              \
            -e IP=<IPv4_RR>                                         \
            [-e IP6=<IPv6_RR>]                                      \
            -e ETCD_ENDPOINTS=<http://ETCD_IP:PORT>                 \
-           calico/routereflector:{{site.data.versions[page.version].first.components["calico/routereflector"].version}}
+           calico/routereflector:{{site.data.versions.first.components["calico/routereflector"].version}}
 ```
 
 Where:
@@ -100,7 +100,7 @@ docker run --privileged --net=host -d                              \
            -e ETCD_CA_CERT_FILE=<MOUNT_DIR>/<CA_FILE>              \
            -e ETCD_CERT_FILE=<MOUNT_DIR>/<CERT_FILE>               \
            -e ETCD_KEY_FILE=<MOUNT_DIR>/<KEY_FILE>                 \
-           calico/routereflector:{{site.data.versions[page.version].first.components["calico/routereflector"].version}}
+           calico/routereflector:{{site.data.versions.first.components["calico/routereflector"].version}}
 ```
 
 Where `<FULL_PATH_TO_CERT_DIR>` is a directory on the host that contains
@@ -130,7 +130,7 @@ docker run --privileged --net=host -d                              \
            -e KUBECONFIG=/kubeconfig                               \
            -e IP=<IPv4_RR>                                         \
            -v <KUBECONFIG FILE PATH>:/kubeconfig                   \
-           calico/routereflector:{{site.data.versions[page.version].first.components["calico/routereflector"].version}}
+           calico/routereflector:{{site.data.versions.first.components["calico/routereflector"].version}}
 ```
 
 Where:

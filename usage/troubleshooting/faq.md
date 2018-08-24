@@ -93,7 +93,7 @@ documents *mandates* the use of VLANs.
 2. Modify IP Pool config
 
    Modify the pool's spec to enable IP-IP and natOutgoing. (See
-   [IP Pools]({{site.baseurl}}/{{page.version}}/reference/calicoctl/resources/ippool)
+   [IP Pools]({{site.baseurl}}/reference/calicoctl/resources/ippool)
    for other settings that can be edited.)
 
    ```shell
@@ -172,9 +172,9 @@ workloads to each other, and the broader world.
 
 However, the underlying physical fabric obviously needs to be set up
 too. Here, {{site.prodname}} has discussed how both a layer 2 (see
-[here]({{site.baseurl}}/{{page.version}}/reference/private-cloud/l2-interconnect-fabric))
+[here]({{site.baseurl}}/reference/private-cloud/l2-interconnect-fabric))
 or a layer 3 (see
-[here]({{site.baseurl}}/{{page.version}}/reference/private-cloud/l3-interconnect-fabric))
+[here]({{site.baseurl}}/reference/private-cloud/l3-interconnect-fabric))
 fabric
 could be integrated with {{site.prodname}}. This is one of the great strengths of
 the {{site.prodname}} model: it allows the infrastructure to be decoupled from what
@@ -220,7 +220,7 @@ again, and again the reachability doesn’t have to change.
 
 ## "How does {{site.prodname}} interact with the Neutron API?"
 
-[This document]({{site.baseurl}}/{{page.version}}/getting-started/openstack/neutron-api)
+[This document]({{site.baseurl}}/getting-started/openstack/neutron-api)
 document goes into extensive detail about how
 various Neutron API calls translate into {{site.prodname}} actions.
 
@@ -234,7 +234,7 @@ would be unable to enforce security rules between workloads on the same host;
 all containers on the bridge would be able to communicate with one other.
 
 You can securely configure port mapping by following our [guide on Exposing
-Container Ports to the Internet]({{site.baseurl}}/{{page.version}}/usage/external-connectivity).
+Container Ports to the Internet]({{site.baseurl}}/usage/external-connectivity).
 
 ## Can {{site.prodname}} containers use any IP address within a pool, even subnet network/broadcast addresses?
 
@@ -258,10 +258,10 @@ center.  Access to that network is via a router, which also is the default
 router for all the container hosts.
 
 If this describes your infrastructure, the
-[External Connectivity tutorial]({{site.baseurl}}/{{page.version}}/usage/external-connectivity) explains in more detail
+[External Connectivity tutorial]({{site.baseurl}}/usage/external-connectivity) explains in more detail
 what to do. Otherwise, if you have a layer 3 (IP) fabric, then there are
 detailed datacenter networking recommendations given
-in the main [this article]({{site.baseurl}}/{{page.version}}/reference/private-cloud/l3-interconnect-fabric).
+in the main [this article]({{site.baseurl}}/reference/private-cloud/l3-interconnect-fabric).
 We'd also encourage you to [get in touch](https://www.projectcalico.org/contact/)
 to discuss your environment.
 

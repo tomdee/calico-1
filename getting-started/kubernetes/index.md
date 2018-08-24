@@ -10,7 +10,7 @@ This quickstart gets you a single-host Kubernetes cluster with {{site.prodname}}
 in approximately 15 minutes. You can use this cluster for testing and
 development.
 
-To deploy a cluster suitable for production, refer to [Installation](/{{page.version}}/getting-started/kubernetes/installation/).
+To deploy a cluster suitable for production, refer to [Installation](/getting-started/kubernetes/installation/).
 
 
 ### Requirements
@@ -56,11 +56,11 @@ the host. Instead, continue directly to the
 
    ```
    kubectl apply -f \
-   {{site.url}}/{{page.version}}/getting-started/kubernetes/installation/hosted/etcd.yaml
+   {{site.url}}/getting-started/kubernetes/installation/hosted/etcd.yaml
    ```
 
    > **Note**: You can also
-   > [view the YAML in a new tab]({{site.url}}/{{page.version}}/getting-started/kubernetes/installation/hosted/etcd.yaml){:target="_blank"}.
+   > [view the YAML in a new tab]({{site.url}}/getting-started/kubernetes/installation/hosted/etcd.yaml){:target="_blank"}.
    {: .alert .alert-info}
 
    You should see the following output.
@@ -74,11 +74,11 @@ the host. Instead, continue directly to the
 
    ```
    kubectl apply -f \
-   {{site.url}}/{{page.version}}/getting-started/kubernetes/installation/rbac.yaml
+   {{site.url}}/getting-started/kubernetes/installation/rbac.yaml
    ```
 
    > **Note**: You can also
-   > [view the YAML in a new tab]({{site.url}}/{{page.version}}/getting-started/kubernetes/installation/rbac.yaml){:target="_blank"}.
+   > [view the YAML in a new tab]({{site.url}}/getting-started/kubernetes/installation/rbac.yaml){:target="_blank"}.
    {: .alert .alert-info}
 
    You should see the following output.
@@ -94,11 +94,11 @@ the host. Instead, continue directly to the
 
    ```
    kubectl apply -f \
-   {{site.url}}/{{page.version}}/getting-started/kubernetes/installation/hosted/calico.yaml
+   {{site.url}}/getting-started/kubernetes/installation/hosted/calico.yaml
    ```
 
    > **Note**: You can also
-   > [view the YAML in a new tab]({{site.url}}/{{page.version}}/getting-started/kubernetes/installation/hosted/calico.yaml){:target="_blank"}.
+   > [view the YAML in a new tab]({{site.url}}/getting-started/kubernetes/installation/hosted/calico.yaml){:target="_blank"}.
    {: .alert .alert-info}
 
    You should see the following output.
@@ -174,4 +174,4 @@ equipped with {{site.prodname}}.
 
 **[Create a user interface that shows blocked and allowed connections in real time](tutorials/stars-policy/)**
 
-**[Install and configure calicoctl](/{{page.version}}/usage/calicoctl/install)**
+**[Install and configure calicoctl](/usage/calicoctl/install)**

@@ -42,7 +42,7 @@ exclude:
   - hack
   - calico_node
 
-version: MAGIC
+version: master
 old_version: False
 
 defaults:

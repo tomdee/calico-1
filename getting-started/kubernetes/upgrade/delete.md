@@ -20,7 +20,7 @@ following conditions.
   the Kubernetes API datastore. If you plan to attempt another upgrade to
   Calico v3.x, this is required.](#deleting-calico-data-from-the-kubernetes-api-datastore-after-a-downgrade).
 
-{% include {{page.version}}/deleting-etcd-v2-v3-data.md %}
+{% include deleting-etcd-v2-v3-data.md %}
 
 ## Deleting Calico data from the Kubernetes API datastore after a downgrade
 

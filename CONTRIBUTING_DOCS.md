@@ -181,10 +181,10 @@ To link to a page not named `index.md`, omit the closing slash. To link to a pag
 
 ### Relative links and `page.version` variable
 
-To link to other doc site content, use relative links prefixed with: `/{{page.version}}/`. This allows the content to port across documentation versions without link breakage. Example:
+To link to other doc site content, use relative links prefixed with: `/`. This allows the content to port across documentation versions without link breakage. Example:
 
 ```
-[Get started](/{{page.version}}/getting-started/)
+[Get started](/getting-started/)
 ```
 
 > **Pro tip**: `page.version` will be inherited from the default set in `_config.yml` for the current page's directory.
@@ -198,7 +198,7 @@ Do not include any uppercase letters in your links.
 An anchor link for each heading is automatically created. It consists of the title of the heading with each word separated by hyphens. Delete any slashes in the title. For example, to reference a heading titled "Working with the calico/kube-controllers container" on a page located at `https://docs.projectcalico.org/v3.0/reference/kube-controllers/configuration`, you would use the following:
 
 ```
-/{{page.version}}/reference/kube-controllers/configuration#working-with-the-calicokube-controllers-container
+/reference/kube-controllers/configuration#working-with-the-calicokube-controllers-container
 ```
 
 ## Canonical URLs

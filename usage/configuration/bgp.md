@@ -50,7 +50,7 @@ each peering with the same route reflector (or set of route reflectors).
 **Per-node BGP peers**
 
 At scale, different network topologies come in to play.  For example, in the
-[AS per Rack model]({{site.baseurl}}/{{page.version}}/reference/private-cloud/l3-interconnect-fabric#the-as-per-rack-model)
+[AS per Rack model]({{site.baseurl}}/reference/private-cloud/l3-interconnect-fabric#the-as-per-rack-model)
 discussed in the reference material, each {{site.prodname}} node peers with
 a route reflector in the Top of Rack (ToR) switch.  In this case the BGP
 peerings are configured on a per-node basis (i.e., these are node-specific
@@ -96,7 +96,7 @@ to ensure continuity of service.
 
 #### Example
 
-**Prerequisite**: `calicoctl` [installed]({{site.baseurl}}/{{page.version}}/usage/calicoctl/install) and [configured]({{site.baseurl}}/{{page.version}}/usage/calicoctl/configure/).
+**Prerequisite**: `calicoctl` [installed]({{site.baseurl}}/usage/calicoctl/install) and [configured]({{site.baseurl}}/usage/calicoctl/configure/).
 
 To turn off the full BGP node-to-node mesh or to modify the global AS number, complete
 the following steps.
@@ -111,7 +111,7 @@ the following steps.
 1. If the resource _does_ exist, skip to step 3. Otherwise, use the following 
    command to create the resource. Before issuing the command, adjust the 
    `nodeToNodeMeshEnabled` and `asNumber` lines and values as desired. 
-   Refer to [BGP Configuration Resource]({{site.baseurl}}/{{page.version}}/reference/calicoctl/resources/bgpconfig) for details about these settings.
+   Refer to [BGP Configuration Resource]({{site.baseurl}}/reference/calicoctl/resources/bgpconfig) for details about these settings.
 
     ```
     cat << EOF | calicoctl create -f -
@@ -136,7 +136,7 @@ the following steps.
 
 1. Open the bgpconfig settings file in your favorite editor, modify 
    the `nodeToNodeMeshEnabled` or `asNumber` as desired, and save the file. 
-   Refer to [BGP Configuration Resource]({{site.baseurl}}/{{page.version}}/reference/calicoctl/resources/bgpconfig) for details about these settings.
+   Refer to [BGP Configuration Resource]({{site.baseurl}}/reference/calicoctl/resources/bgpconfig) for details about these settings.
    
     ```
     vim bgp.yaml
@@ -209,9 +209,9 @@ specific to a {{site.prodname}} node.  We refer to these as node-specific peers.
 Configuring node-specific peers is necessary when the BGP topology is more
 complicated and requires different peerings on different nodes.  For example,
 the
-[AS per Rack model]({{site.baseurl}}/{{page.version}}/reference/private-cloud/l3-interconnect-fabric#the-as-per-rack-model)
+[AS per Rack model]({{site.baseurl}}/reference/private-cloud/l3-interconnect-fabric#the-as-per-rack-model)
 or
-[AS per Compute Server model]({{site.baseurl}}/{{page.version}}/reference/private-cloud/l3-interconnect-fabric#the-as-per-compute-server-model)
+[AS per Compute Server model]({{site.baseurl}}/reference/private-cloud/l3-interconnect-fabric#the-as-per-compute-server-model)
 described in the reference material.
 
 #### Example

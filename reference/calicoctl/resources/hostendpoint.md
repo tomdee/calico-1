@@ -7,11 +7,11 @@ A host endpoint resource (`HostEndpoint`) represents an interface attached to a 
 
 Each host endpoint may include a set of labels and list of profiles that {{site.prodname}}
 will use to apply
-[policy]({{site.baseurl}}/{{page.version}}/reference/calicoctl/resources/networkpolicy)
+[policy]({{site.baseurl}}/reference/calicoctl/resources/networkpolicy)
 to the interface.  If no profiles or labels are applied, {{site.prodname}} will not apply
 any policy.
 
-For `calicoctl` [commands]({{site.baseurl}}/{{page.version}}/reference/calicoctl/commands/) that specify a resource type on the CLI, the following
+For `calicoctl` [commands]({{site.baseurl}}/reference/calicoctl/commands/) that specify a resource type on the CLI, the following
 aliases are supported (all case insensitive): `hostendpoint`, `hostendpoints`, `hep`, `heps`.
 
 > **Important**: When rendering security rules on other hosts, {{site.prodname}} uses the
@@ -67,7 +67,7 @@ spec:
 
 #### EndpointPort
 
-{% include {{page.version}}/endpointport.md %}
+{% include endpointport.md %}
 
 ### Supported operations
 

@@ -57,4 +57,4 @@ and prevent cluster availability impact by viewing the [Custom Install Guide](cu
 
 #### Deploying Applications
 
-Once installed, see the [standard usage guides]({{site.baseurl}}/{{page.version}}/getting-started/mesos#tutorials)
+Once installed, see the [standard usage guides]({{site.baseurl}}/getting-started/mesos#tutorials)

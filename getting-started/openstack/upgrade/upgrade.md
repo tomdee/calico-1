@@ -77,12 +77,12 @@ This part of the upgrade procedure varies slightly according to which operating 
    calico-upgrade complete
    ```
   
-1. Remove any existing `calicoctl` instances and [install the new `calicoctl`](/{{page.version}}/usage/calicoctl/install).
+1. Remove any existing `calicoctl` instances and [install the new `calicoctl`](/usage/calicoctl/install).
 
-1. Congratulations! You have upgraded to {{site.prodname}} {{page.version}}.
+1. Congratulations! You have upgraded to {{site.prodname}} {{site.version}}.
       
    > **Note**: If an error occurs during the upgrade, refer to 
-   > [Downgrading {{site.prodname}}](/{{page.version}}/getting-started/openstack/upgrade/downgrade).
+   > [Downgrading {{site.prodname}}](/getting-started/openstack/upgrade/downgrade).
    {: .alert .alert-info}
 
 ## Upgrading an OpenStack cluster based on Ubuntu
@@ -134,10 +134,10 @@ This part of the upgrade procedure varies slightly according to which operating 
    calico-upgrade complete
    ```
   
-1. Remove any existing `calicoctl` instances and [install the new `calicoctl`](/{{page.version}}/usage/calicoctl/install).
+1. Remove any existing `calicoctl` instances and [install the new `calicoctl`](/usage/calicoctl/install).
 
-1. Congratulations! You have upgraded to {{site.prodname}} {{page.version}}.
+1. Congratulations! You have upgraded to {{site.prodname}} {{site.version}}.
       
    > **Note**: If an error occurs during the upgrade, refer to 
-   > [Downgrading {{site.prodname}}](/{{page.version}}/getting-started/openstack/upgrade/downgrade).
+   > [Downgrading {{site.prodname}}](/getting-started/openstack/upgrade/downgrade).
    {: .alert .alert-info}

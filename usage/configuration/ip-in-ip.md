@@ -12,7 +12,7 @@ over the network, and in particular you have no option to set up BGP peering bet
 your {{site.prodname}} nodes and the network routers.
 
 {{site.prodname}} can be configured to use IP-in-IP encapsulation by enabling the IPIP option
-on the [IP pool resource]({{site.baseurl}}/{{page.version}}/reference/calicoctl/resources/ippool).
+on the [IP pool resource]({{site.baseurl}}/reference/calicoctl/resources/ippool).
 When enabled, {{site.prodname}} will use IP-in-IP encapsulation when routing packets *to*
 workload IPs falling in the IP pool range.
 
@@ -86,7 +86,7 @@ EOF
 #### Upgrading from pre-v2.1
 
 If you are planning to use CrossSubnet IPIP, your entire deployment must be running with
-Calico v2.1 or higher.  See [releases page]({{site.baseurl}}/{{page.version}}/releases)
+Calico v2.1 or higher.  See [releases page]({{site.baseurl}}/releases)
 for details on the component versions for each release.
 
 Upgrade your deployment to use the latest {{site.prodname}} versions - the process for this
@@ -114,4 +114,4 @@ to be fixed.
 
 The subnet configuration may be fixed in a few different ways depending on how
 you have deployed your `{{site.nodecontainer}}` containers.  This is discussed in the
-[Configuring a Node IP Address and Subnet guide]({{site.baseurl}}/{{page.version}}/usage/configuration/node).
+[Configuring a Node IP Address and Subnet guide]({{site.baseurl}}/usage/configuration/node).

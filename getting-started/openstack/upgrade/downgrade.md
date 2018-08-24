@@ -32,7 +32,7 @@ This procedure is the reverse of the upgrade procedure and varies slightly accor
 ### Downgrade {{site.prodname}} components
 The remainder of the procedure is the reverse of the upgrade procedure:
    
-1. Remove any upgraded `calicoctl` instances and [install the previous `calicoctl`](/{{page.version}}/usage/calicoctl/install).
+1. Remove any upgraded `calicoctl` instances and [install the previous `calicoctl`](/usage/calicoctl/install).
 
 1. On all nodes, change the location of the {{site.prodname}} packages to point to the 2.6.x repo:
 
@@ -80,7 +80,7 @@ The remainder of the procedure is the reverse of the upgrade procedure:
 
 ## Downgrading an OpenStack cluster based on Ubuntu
 
-1. Remove any upgraded `calicoctl` instances and [install the previous `calicoctl`](/{{page.version}}/usage/calicoctl/install).
+1. Remove any upgraded `calicoctl` instances and [install the previous `calicoctl`](/usage/calicoctl/install).
 
 1. On all nodes, change the location of the {{site.prodname}} packages to point to the 2.6.x repo:
 

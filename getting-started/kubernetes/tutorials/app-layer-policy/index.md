@@ -9,10 +9,10 @@ layer policy to mitigate some common threats.
 ## Prerequisites
 
 To create a Kubernetes cluster which supports application layer policy, follow
-one of our [getting started guides]({{site.baseurl}}/{{page.version}}/getting-started/kubernetes),
-and [enable application layer policy]({{site.baseurl}}/{{page.version}}/getting-started/kubernetes/installation/app-layer-policy).
+one of our [getting started guides]({{site.baseurl}}/getting-started/kubernetes),
+and [enable application layer policy]({{site.baseurl}}/getting-started/kubernetes/installation/app-layer-policy).
 
-You will also need the [calicoctl]({{site.baseurl}}/{{page.version}}/usage/calicoctl/install) command line tool.
+You will also need the [calicoctl]({{site.baseurl}}/usage/calicoctl/install) command line tool.
 
 ### Install the demo application
 
@@ -22,7 +22,7 @@ serves up account summaries, and an [etcd] datastore.
 
 ```bash
 kubectl apply -f \
-{{site.url}}/{{page.version}}/getting-started/kubernetes/tutorials/app-layer-policy/manifests/10-yaobank.yaml
+{{site.url}}/getting-started/kubernetes/tutorials/app-layer-policy/manifests/10-yaobank.yaml
 ```
 
 > **Note**: You can also
@@ -172,7 +172,7 @@ return to the customer pod later).
 
 ```bash
 kubectl apply -f \
-{{site.url}}/{{page.version}}/getting-started/kubernetes/tutorials/app-layer-policy/manifests/20-attack-pod.yaml
+{{site.url}}/getting-started/kubernetes/tutorials/app-layer-policy/manifests/20-attack-pod.yaml
 ```
 
 Take a look at the [`20-attack-pod.yaml` manifest in your browser](manifests/20-attack-pod.yaml).
@@ -195,7 +195,7 @@ Return to your web browser and refresh to confirm the new balance.
 
 We can mitigate both of the above deficiencies with a {{site.prodname}} policy.
 
-    wget {{site.url}}/{{page.version}}/getting-started/kubernetes/tutorials/app-layer-policy/manifests/30-policy.yaml
+    wget {{site.url}}/getting-started/kubernetes/tutorials/app-layer-policy/manifests/30-policy.yaml
     calicoctl create -f 30-policy.yaml
 
 > **Note**: You can also

@@ -7,7 +7,7 @@ canonical_url: 'https://docs.projectcalico.org/v2.6/getting-started/docker/tutor
 
 With {{site.prodname}} as a Docker network plugin, {{site.prodname}} can be configured to extract the
 labels on a container and apply them to the workload endpoint for use with {{site.prodname}}
-[policy]({{site.baseurl}}/{{page.version}}/reference/calicoctl/resources/networkpolicy).
+[policy]({{site.baseurl}}/reference/calicoctl/resources/networkpolicy).
 By default, {{site.prodname}} blocks all traffic unless it has been explicitly allowed
 through configuration of the globally
 defined policy which uses selectors to determine which subset of the policy is
@@ -147,7 +147,7 @@ This works as follows:
    `role = database` (i.e. to database containers)
 
 For details on all of the possible match criteria, see the
-[policy resource]({{site.baseurl}}/{{page.version}}/reference/calicoctl/resources/networkpolicy)
+[policy resource]({{site.baseurl}}/reference/calicoctl/resources/networkpolicy)
 documentation.
 
 ## Multiple networks

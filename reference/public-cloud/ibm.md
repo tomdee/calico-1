@@ -13,5 +13,5 @@ canonical_url: https://docs.projectcalico.org/master/reference/public-cloud/ibm
 
 This is also handled automatically in the [IBM Cloud Kubernetes Service][IBMKUBE].  No additional configuration of Calico is necessary.
 
-[IPIP]: {{site.baseurl}}/{{page.version}}/usage/configuration/ip-in-ip
+[IPIP]: {{site.baseurl}}/usage/configuration/ip-in-ip
 [IBMKUBE]: https://www.ibm.com/cloud/container-service/

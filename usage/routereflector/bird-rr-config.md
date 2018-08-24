@@ -237,4 +237,4 @@ spec:
 EOF
 ```
 
-For more details/options refer to the [BGP configuration guide]({{site.baseurl}}/{{page.version}}/usage/configuration/bgp).
+For more details/options refer to the [BGP configuration guide]({{site.baseurl}}/usage/configuration/bgp).

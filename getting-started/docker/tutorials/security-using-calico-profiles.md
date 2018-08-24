@@ -6,7 +6,7 @@ canonical_url: 'https://docs.projectcalico.org/v2.6/getting-started/docker/tutor
 ## Background
 
 With {{site.prodname}} as a Docker network plugin, {{site.prodname}} uses an identically named
-[profile]({{site.baseurl}}/{{page.version}}/reference/calicoctl/resources/profile)
+[profile]({{site.baseurl}}/reference/calicoctl/resources/profile)
 to represent each Docker network.  This profile is applied to each container
 in that network and the profile is used by {{site.prodname}} to configure access policy
 for that container.  The {{site.prodname}} network plugin will automatically create the
@@ -22,13 +22,13 @@ To run through the worked example in this tutorial you will need to set up two h
 with {{site.prodname}} installed.
 
 Follow the
-[Manual setup]({{site.baseurl}}/{{page.version}}/getting-started/docker/installation/manual)
+[Manual setup]({{site.baseurl}}/getting-started/docker/installation/manual)
 if you don't already have a cluster prepared.
 
 Or alternatively, use one of the two quickstart clusters:
 
-- [Vagrant install with Container Linux by CoreOS]({{site.baseurl}}/{{page.version}}/getting-started/docker/installation/vagrant-coreos/)
-- [Vagrant install with Ubuntu]({{site.baseurl}}/{{page.version}}/getting-started/docker/installation/vagrant-ubuntu)
+- [Vagrant install with Container Linux by CoreOS]({{site.baseurl}}/getting-started/docker/installation/vagrant-coreos/)
+- [Vagrant install with Ubuntu]({{site.baseurl}}/getting-started/docker/installation/vagrant-ubuntu)
 
 ### 1. Create the network
 
@@ -107,4 +107,4 @@ To see the list of networks, use:
 ## Further Reading
 
 For details on configuring more advanced policy, see
-[Security using {{site.prodname}} Profiles and Policy]({{site.baseurl}}/{{page.version}}/getting-started/docker/tutorials/security-using-calico-profiles-and-policy).
+[Security using {{site.prodname}} Profiles and Policy]({{site.baseurl}}/getting-started/docker/tutorials/security-using-calico-profiles-and-policy).

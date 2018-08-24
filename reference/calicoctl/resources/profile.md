@@ -8,9 +8,9 @@ to the individual endpoints to which this profile has been assigned.
 
 Each {{site.prodname}} endpoint or host endpoint can be assigned to zero or more profiles.
 
-Also see the [NetworkPolicy]({{site.baseurl}}/{{page.version}}/reference/calicoctl/resources/networkpolicy) and [GlobalNetworkPolicy]({{site.baseurl}}/{{page.version}}/reference/calicoctl/resources/globalnetworkpolicy) which provide an alternate way to select what policy is applied to an endpoint.
+Also see the [NetworkPolicy]({{site.baseurl}}/reference/calicoctl/resources/networkpolicy) and [GlobalNetworkPolicy]({{site.baseurl}}/reference/calicoctl/resources/globalnetworkpolicy) which provide an alternate way to select what policy is applied to an endpoint.
 
-For `calicoctl` [commands]({{site.baseurl}}/{{page.version}}/reference/calicoctl/commands/) that specify a resource type on the CLI, the following
+For `calicoctl` [commands]({{site.baseurl}}/reference/calicoctl/commands/) that specify a resource type on the CLI, the following
 aliases are supported (all case insensitive): `profile`, `profiles`, `pro`, `pros`.
 
 ### Sample YAML
@@ -59,28 +59,28 @@ spec:
 
 #### Rule
 
-{% include {{page.version}}/rule.md %}
+{% include rule.md %}
 
 #### ICMP
 
-{% include {{page.version}}/icmp.md %}
+{% include icmp.md %}
 
 #### EntityRule
 
-{% include {{page.version}}/entityrule.md %}
+{% include entityrule.md %}
 
 #### Selector
 
-{% include {{page.version}}/selectors.md %}
+{% include selectors.md %}
 
 #### Ports
 
-{% include {{page.version}}/ports.md %}
+{% include ports.md %}
 
 ### Application layer policy
 
 Application layer policy is an optional feature of {{site.prodname}} and
-[must be enabled]({{site.baseurl}}/{{page.version}}/getting-started/kubernetes/installation/app-layer-policy)
+[must be enabled]({{site.baseurl}}/getting-started/kubernetes/installation/app-layer-policy)
 in order to use the following match criteria.
 
 > **NOTE**: Application layer policy match criteria are supported with the following restrictions.
@@ -90,11 +90,11 @@ in order to use the following match criteria.
 
 #### ServiceAccountMatch
 
-{% include {{page.version}}/serviceaccountmatch.md %}
+{% include serviceaccountmatch.md %}
 
 #### HTTPMatch
 
-{% include {{page.version}}/httpmatch.md %}
+{% include httpmatch.md %}
 
 ### Supported operations
 

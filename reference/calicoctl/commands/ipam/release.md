@@ -5,7 +5,7 @@ canonical_url: 'https://docs.projectcalico.org/v3.2/reference/calicoctl/commands
 
 This section describes the `calicoctl ipam release` command.
 
-Read the [calicoctl Overview]({{site.baseurl}}/{{page.version}}/reference/calicoctl/) for a full list of calicoctl commands.
+Read the [calicoctl Overview]({{site.baseurl}}/reference/calicoctl/) for a full list of calicoctl commands.
 
 ## Displaying the help text for 'calicoctl ipam release' command
 
@@ -49,5 +49,5 @@ $ calicoctl ipam release --ip=192.168.1.2
 
 ## See also
 
--  [calicoctl configuration]({{site.baseurl}}/{{page.version}}/reference/calicoctl/setup) for details on configuring `calicoctl` to access
+-  [calicoctl configuration]({{site.baseurl}}/reference/calicoctl/setup) for details on configuring `calicoctl` to access
    the {{site.prodname}} datastore.

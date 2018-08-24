@@ -12,7 +12,7 @@ target etcdv3 cluster. The host must be AMD64 and running one of the following:
 - Linux
 - Windows
 
-{% include {{page.version}}/install-calico-upgrade.md %}
+{% include install-calico-upgrade.md %}
 
 ## Configuring calico-upgrade
 
@@ -25,9 +25,9 @@ following:
 
 - [The etcdv3 cluster you plan to use for Calico v3.x](#configuring-calico-upgrade-to-connect-to-the-etcdv3-cluster)
 
-{% include {{page.version}}/config-calico-upgrade-etcd.md %}
+{% include config-calico-upgrade-etcd.md %}
 
 ## Next steps
 
 After configuring `calico-upgrade` to communicate with the existing etcdv2 instance
-and the target etcdv3 cluster, continue to [Testing the data migration](/{{page.version}}/getting-started/kubernetes/upgrade/test).
+and the target etcdv3 cluster, continue to [Testing the data migration](/getting-started/kubernetes/upgrade/test).

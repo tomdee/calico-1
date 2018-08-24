@@ -24,32 +24,32 @@ and your datastore type.
 
    ```
    kubectl apply -f \
-   {{site.url}}/{{page.version}}/getting-started/kubernetes/installation/hosted/rbac-kdd.yaml
+   {{site.url}}/getting-started/kubernetes/installation/hosted/rbac-kdd.yaml
    ```
    > **Note**: You can also 
-   > [view the manifest in your browser]({{site.url}}/{{page.version}}/getting-started/kubernetes/installation/hosted/rbac-kdd.yaml){:target="_blank"}.
+   > [view the manifest in your browser]({{site.url}}/getting-started/kubernetes/installation/hosted/rbac-kdd.yaml){:target="_blank"}.
    {: .alert .alert-info}
 
-1. Download the {{page.version}} manifest that corresponds to your original installation method.
+1. Download the {{site.version}} manifest that corresponds to your original installation method.
 
    **{{site.prodname}} for policy and networking**
    ```bash
    curl \
-   {{site.url}}/{{page.version}}/getting-started/kubernetes/installation/hosted/kubernetes-datastore/calico-networking/1.7/calico.yaml \
+   {{site.url}}/getting-started/kubernetes/installation/hosted/kubernetes-datastore/calico-networking/1.7/calico.yaml \
    -O
    ```
 
    **{{site.prodname}} for policy and flannel for networking**
    ```bash
    curl \
-   {{site.url}}/{{page.version}}/getting-started/kubernetes/installation/hosted/canal/canal.yaml \
+   {{site.url}}/getting-started/kubernetes/installation/hosted/canal/canal.yaml \
    -O
    ```
 
    **{{site.prodname}} for policy (advanced)**
    ```bash
    curl \
-   {{site.url}}/{{page.version}}/getting-started/kubernetes/installation/hosted/kubernetes-datastore/policy-only/1.7/calico.yaml \
+   {{site.url}}/getting-started/kubernetes/installation/hosted/kubernetes-datastore/policy-only/1.7/calico.yaml \
    -O
    ```
    
@@ -58,7 +58,7 @@ and your datastore type.
    {: .alert .alert-info}
 
 1. Use the following command to initiate a rolling update, after replacing 
-   `<manifest-file-name>` with the file name of your {{page.version}} manifest.
+   `<manifest-file-name>` with the file name of your {{site.version}} manifest.
 
    ```
    kubectl apply -f <manifest-file-name>
@@ -87,13 +87,13 @@ and your datastore type.
    calicoctl version
    ```
    
-   It should return a `Cluster Version` of `{{page.version}}.x`.
+   It should return a `Cluster Version` of `{{site.version}}.x`.
    
    > **Note**: If upgrading from {{site.prodname}} 2.6.x and an error occurs during 
-   > the upgrade, refer to [Downgrading Calico](/{{page.version}}/getting-started/kubernetes/upgrade/downgrade).
+   > the upgrade, refer to [Downgrading Calico](/getting-started/kubernetes/upgrade/downgrade).
    {: .alert .alert-info}
 
-1. Congratulations! You have upgraded to {{site.prodname}} {{page.version}}.
+1. Congratulations! You have upgraded to {{site.prodname}} {{site.version}}.
 
 
 ## Upgrading an installation that uses an etcd datastore
@@ -103,35 +103,35 @@ and your datastore type.
 
    ```
    kubectl apply -f \
-   {{site.url}}/{{page.version}}/getting-started/kubernetes/installation/rbac.yaml
+   {{site.url}}/getting-started/kubernetes/installation/rbac.yaml
    ```
    > **Note**: You can also 
-   > [view the manifest in your browser]({{site.url}}/{{page.version}}/getting-started/kubernetes/installation/rbac.yaml){:target="_blank"}.
+   > [view the manifest in your browser]({{site.url}}/getting-started/kubernetes/installation/rbac.yaml){:target="_blank"}.
    {: .alert .alert-info}
 
-1. Download the {{page.version}} manifest that corresponds to your original installation method.
+1. Download the {{site.version}} manifest that corresponds to your original installation method.
 
    **{{site.prodname}} for policy and networking**
    ```bash
    curl \
-   {{site.url}}/{{page.version}}/getting-started/kubernetes/installation/hosted/calico.yaml \
+   {{site.url}}/getting-started/kubernetes/installation/hosted/calico.yaml \
    -O
    ```
 
    **{{site.prodname}} for policy and flannel for networking**
    ```bash
    curl \
-   {{site.url}}/{{page.version}}/getting-started/kubernetes/installation/hosted/canal/canal-etcd.yaml \
+   {{site.url}}/getting-started/kubernetes/installation/hosted/canal/canal-etcd.yaml \
    -O
    ```
    
    > **Note**: You must must manually apply the changes you made to the manifest
-   > during installation to the downloaded {{page.version}} manifest. At a minimum,
+   > during installation to the downloaded {{site.version}} manifest. At a minimum,
    > you must set the `etcd_endpoints` value.
    {: .alert .alert-info}
 
 1. Use the following command to initiate a rolling update, after replacing 
-   `<manifest-file-name>` with the file name of your {{page.version}} manifest.
+   `<manifest-file-name>` with the file name of your {{site.version}} manifest.
 
    ```
    kubectl apply -f <manifest-file-name>
@@ -157,7 +157,7 @@ and your datastore type.
 
    > **Note**: If upgrading from {{site.prodname}} 2.6.x and an error occurs during 
    > the upgrade, refer to an error occurs during the upgrade, refer to 
-   > [Downgrading {{site.prodname}}](/{{page.version}}/getting-started/kubernetes/upgrade/downgrade).
+   > [Downgrading {{site.prodname}}](/getting-started/kubernetes/upgrade/downgrade).
    {: .alert .alert-info}
 
 1. Remove any existing `calicoctl` instances, [install the new `calicoctl`](../../../usage/calicoctl/install)
@@ -169,7 +169,7 @@ and your datastore type.
    calicoctl version
    ```
    
-   It should return a `Cluster Version` of `{{page.version}}.x`.
+   It should return a `Cluster Version` of `{{site.version}}.x`.
    
 1. If you are upgrading from {{site.prodname}} 3.x, skip to the next step. Otherwise, 
    for those upgrading from {{site.prodname}} 2.6.x, wait for some time to really 
@@ -178,7 +178,7 @@ and your datastore type.
    pods and make changes to configuration and policy. 
 
    > **Important**: If you experience errors after running `calico-upgrade complete`, 
-   > such as an inability to schedule pods, [downgrade {{site.prodname}} as soon as possible](/{{page.version}}/getting-started/kubernetes/upgrade/downgrade).
+   > such as an inability to schedule pods, [downgrade {{site.prodname}} as soon as possible](/getting-started/kubernetes/upgrade/downgrade).
    {: .alert .alert-danger}
 
-1. Congratulations! You have upgraded to {{site.prodname}} {{page.version}}.
+1. Congratulations! You have upgraded to {{site.prodname}} {{site.version}}.

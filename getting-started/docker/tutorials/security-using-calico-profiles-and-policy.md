@@ -6,7 +6,7 @@ canonical_url: 'https://docs.projectcalico.org/v2.6/getting-started/docker/tutor
 ## Background
 
 With {{site.prodname}} as a Docker network plugin, {{site.prodname}} uses an identically named
-[profile]({{site.baseurl}}/{{page.version}}/reference/calicoctl/resources/profile)
+[profile]({{site.baseurl}}/reference/calicoctl/resources/profile)
 to represent each Docker network.  This profile is applied to each container
 in that network and the profile is used by {{site.prodname}} to configure access policy
 for that container.  The {{site.prodname}} network plugin will automatically create the 
@@ -145,7 +145,7 @@ containers.  This works as follows:
    database containers)
 
 For details on all of the possible match criteria, see the
-[profile resource]({{site.baseurl}}/{{page.version}}/reference/calicoctl/resources/profile)
+[profile resource]({{site.baseurl}}/reference/calicoctl/resources/profile)
 documentation.
 
 ### b) Global policy applied through label selection
@@ -284,7 +284,7 @@ This works as follows:
    `role = database` (i.e. to database containers)
 
 For details on all of the possible match criteria, see the
-[GlobalNetworkPolicy resource]({{site.baseurl}}/{{page.version}}/reference/calicoctl/resources/globalnetworkpolicy)
+[GlobalNetworkPolicy resource]({{site.baseurl}}/reference/calicoctl/resources/globalnetworkpolicy)
 documentation.
 
 ## Multiple networks
@@ -327,4 +327,4 @@ label.
 ## Further Reading
 
 For details on configuring advanced policy using container labels, see
-[Security using Docker Labels and {{site.prodname}} Policy]({{site.baseurl}}/{{page.version}}/getting-started/docker/tutorials/security-using-docker-labels-and-calico-policy).
+[Security using Docker Labels and {{site.prodname}} Policy]({{site.baseurl}}/getting-started/docker/tutorials/security-using-docker-labels-and-calico-policy).

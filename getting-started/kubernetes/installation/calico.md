@@ -35,7 +35,7 @@ datastore type and number of nodes.
 
    ```
    kubectl apply -f \
-   {{site.url}}/{{page.version}}/getting-started/kubernetes/installation/rbac.yaml
+   {{site.url}}/getting-started/kubernetes/installation/rbac.yaml
    ```
    > **Note**: You can also
    > [view the manifest in your browser](rbac.yaml){:target="_blank"}.
@@ -45,7 +45,7 @@ datastore type and number of nodes.
 
    ```bash
    curl \
-   {{site.url}}/{{page.version}}/getting-started/kubernetes/installation/hosted/calico.yaml \
+   {{site.url}}/getting-started/kubernetes/installation/hosted/calico.yaml \
    -O
    ```
 
@@ -79,7 +79,7 @@ datastore type and number of nodes.
 
    ```
    kubectl apply -f \
-   {{site.url}}/{{page.version}}/getting-started/kubernetes/installation/hosted/rbac-kdd.yaml
+   {{site.url}}/getting-started/kubernetes/installation/hosted/rbac-kdd.yaml
    ```
    > **Note**: You can also
    > [view the manifest in your browser](hosted/rbac-kdd.yaml){:target="_blank"}.
@@ -89,7 +89,7 @@ datastore type and number of nodes.
 
    ```bash
    kubectl apply -f \
-   {{site.url}}/{{page.version}}/getting-started/kubernetes/installation/hosted/kubernetes-datastore/calico-networking/1.7/calico.yaml
+   {{site.url}}/getting-started/kubernetes/installation/hosted/kubernetes-datastore/calico-networking/1.7/calico.yaml
    ```
 
    > **Note**: You can also [view the manifest in your browser](hosted/kubernetes-datastore/calico-networking/1.7/calico.yaml){:target="_blank"}.
@@ -112,7 +112,7 @@ datastore type and number of nodes.
 
    ```
    kubectl apply -f \
-   {{site.url}}/{{page.version}}/getting-started/kubernetes/installation/hosted/rbac-kdd.yaml
+   {{site.url}}/getting-started/kubernetes/installation/hosted/rbac-kdd.yaml
    ```
    > **Note**: You can also
    > [view the manifest in your browser](hosted/rbac-kdd.yaml){:target="_blank"}.
@@ -122,7 +122,7 @@ datastore type and number of nodes.
 
    ```bash
    curl \
-   {{site.url}}/{{page.version}}/getting-started/kubernetes/installation/hosted/kubernetes-datastore/calico-networking/1.7/calico.yaml \
+   {{site.url}}/getting-started/kubernetes/installation/hosted/kubernetes-datastore/calico-networking/1.7/calico.yaml \
    -O
    ```
 

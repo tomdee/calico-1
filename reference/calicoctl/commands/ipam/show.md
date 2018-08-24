@@ -5,7 +5,7 @@ canonical_url: 'https://docs.projectcalico.org/v3.2/reference/calicoctl/commands
 
 This section describes the `calicoctl ipam show` command.
 
-Read the [calicoctl Overview]({{site.baseurl}}/{{page.version}}/reference/calicoctl/) for a full list of calicoctl commands.
+Read the [calicoctl Overview]({{site.baseurl}}/reference/calicoctl/) for a full list of calicoctl commands.
 
 ## Displaying the help text for 'calicoctl ipam show' command
 
@@ -57,5 +57,5 @@ No attributes defined for 192.168.1.1
 
 ## See also
 
--  [calicoctl configuration]({{site.baseurl}}/{{page.version}}/reference/calicoctl/setup) for details on configuring `calicoctl` to access
+-  [calicoctl configuration]({{site.baseurl}}/reference/calicoctl/setup) for details on configuring `calicoctl` to access
    the {{site.prodname}} datastore.

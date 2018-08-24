@@ -40,7 +40,7 @@ Bird and Bird6 are used for distributing IPv4 and IPv6 routes between {{site.pro
 enabled hosts.  The logs are output in the `bird` and `bird6` sub-directories
 of the `{{site.nodecontainer}}` logging directory.
 
-See [BGP Configuration Resource](/{{page.version}}/reference/calicoctl/resources/bgpconfig) 
+See [BGP Configuration Resource](/reference/calicoctl/resources/bgpconfig) 
 for details on how to modify the logging level. For example:
 
 ```

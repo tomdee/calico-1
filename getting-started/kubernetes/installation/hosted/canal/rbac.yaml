@@ -1,5 +1,5 @@
 # {{site.prodname}} Roles
-# Reference {{site.url}}/{{page.version}}/getting-started/kubernetes/installation/hosted/rbac-kdd.yaml
+# Reference {{site.url}}/getting-started/kubernetes/installation/hosted/rbac-kdd.yaml
 kind: ClusterRole
 apiVersion: rbac.authorization.k8s.io/v1beta1
 metadata:

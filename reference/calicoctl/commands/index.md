@@ -49,15 +49,15 @@ Description:
 Details on the `calicoctl` commands are described in the documents linked below
 organized by top level command.
 
--  [calicoctl create]({{site.baseurl}}/{{page.version}}/reference/calicoctl/commands/create)
--  [calicoctl replace]({{site.baseurl}}/{{page.version}}/reference/calicoctl/commands/replace)
--  [calicoctl apply]({{site.baseurl}}/{{page.version}}/reference/calicoctl/commands/apply)
--  [calicoctl delete]({{site.baseurl}}/{{page.version}}/reference/calicoctl/commands/delete)
--  [calicoctl get]({{site.baseurl}}/{{page.version}}/reference/calicoctl/commands/get)
--  [calicoctl ipam]({{site.baseurl}}/{{page.version}}/reference/calicoctl/commands/ipam)
--  [calicoctl node]({{site.baseurl}}/{{page.version}}/reference/calicoctl/commands/node)
--  [calicoctl convert]({{site.baseurl}}/{{page.version}}/reference/calicoctl/commands/convert)
--  [calicoctl version]({{site.baseurl}}/{{page.version}}/reference/calicoctl/commands/version)
+-  [calicoctl create]({{site.baseurl}}/reference/calicoctl/commands/create)
+-  [calicoctl replace]({{site.baseurl}}/reference/calicoctl/commands/replace)
+-  [calicoctl apply]({{site.baseurl}}/reference/calicoctl/commands/apply)
+-  [calicoctl delete]({{site.baseurl}}/reference/calicoctl/commands/delete)
+-  [calicoctl get]({{site.baseurl}}/reference/calicoctl/commands/get)
+-  [calicoctl ipam]({{site.baseurl}}/reference/calicoctl/commands/ipam)
+-  [calicoctl node]({{site.baseurl}}/reference/calicoctl/commands/node)
+-  [calicoctl convert]({{site.baseurl}}/reference/calicoctl/commands/convert)
+-  [calicoctl version]({{site.baseurl}}/reference/calicoctl/commands/version)
 
 ## Modifying low-level component configurations
 
@@ -66,4 +66,4 @@ In order to update low-level Felix or BGP settings (`FelixConfiguration` and `BG
 1. Modify the saved resource file.
 1. Update the resource using `apply` or `replace` command: `calicoctl replace -f config.yaml`.
 
-See [Configuring Felix]({{site.baseurl}}/{{page.version}}/reference/felix/configuration) for more details.
+See [Configuring Felix]({{site.baseurl}}/reference/felix/configuration) for more details.

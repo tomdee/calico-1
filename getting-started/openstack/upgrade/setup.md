@@ -22,7 +22,7 @@ etcdctl set /calico/v1/config/CalicoVersion v2.6.5-7
 > calico-upgrade will not operate on a etcdv2 datastore that does not have this key set.
 {: .alert .alert-danger}
 
-{% include {{page.version}}/install-calico-upgrade.md %}
+{% include install-calico-upgrade.md %}
 
 ## Configuring calico-upgrade
 
@@ -35,11 +35,11 @@ following:
 
 - [The etcdv3 cluster you plan to use for {{site.prodname}} v3.1](#configuring-calico-upgrade-to-connect-to-the-etcdv3-cluster)
 
-{% include {{page.version}}/config-calico-upgrade-etcd.md %}
+{% include config-calico-upgrade-etcd.md %}
 
 
   
 ## Next steps
 
 After configuring `calico-upgrade` to communicate with the existing etcdv2 instance
-and the target etcdv3 cluster, continue to [Testing the data migration](/{{page.version}}/getting-started/openstack/upgrade/test).
+and the target etcdv3 cluster, continue to [Testing the data migration](/getting-started/openstack/upgrade/test).

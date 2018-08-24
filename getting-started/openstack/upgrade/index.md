@@ -32,7 +32,7 @@ to your OpenStack deployment.
 - You must first [upgrade](/v2.6/getting-started/openstack/upgrade) 
   to {{site.prodname}} [v2.6.x](https://github.com/projectcalico/calico/releases) 
   before you can upgrade to {{site.prodname}} 
-  {{site.data.versions[page.version].first.title}}. 
+  {{site.data.versions.first.title}}. 
 - If you have {{site.prodname}} data which was not generated from OpenStack networks/security groups (e.g. Host Endpoints, Host Protection policies, etc), you will need to have `etcdctl` installed.
 
 ## Upgrade steps
@@ -46,15 +46,15 @@ to your OpenStack deployment.
 
 1. If you have added {{site.prodname}} objects in addition to those that are derived automatically (by our Neutron driver) from OpenStack networks/security groups (e.g. Host Endpoints, Host Protection policies, etc) you will need to follow these additional steps to migrate that data:
        
-    1. **[Install and configure calico-upgrade](/{{page.version}}/getting-started/openstack/upgrade/setup)** 
+    1. **[Install and configure calico-upgrade](/getting-started/openstack/upgrade/setup)** 
     
-    1. **[Test the data migration and check for errors](/{{page.version}}/getting-started/openstack/upgrade/test)**
+    1. **[Test the data migration and check for errors](/getting-started/openstack/upgrade/test)**
     
-    1. **[Migrate {{site.prodname}} data](/{{page.version}}/getting-started/openstack/upgrade/migrate)** 
+    1. **[Migrate {{site.prodname}} data](/getting-started/openstack/upgrade/migrate)** 
 
-1. **[Upgrade {{site.prodname}} packages](/{{page.version}}/getting-started/openstack/upgrade/upgrade)**, first on each compute node, then on the controllers. 
+1. **[Upgrade {{site.prodname}} packages](/getting-started/openstack/upgrade/upgrade)**, first on each compute node, then on the controllers. 
 
-1. **[Delete old data](/{{page.version}}/getting-started/openstack/upgrade/delete#deleting-calico-data-from-etcdv2-after-a-successful-migration-and-upgrade)** from etcd.
+1. **[Delete old data](/getting-started/openstack/upgrade/delete#deleting-calico-data-from-etcdv2-after-a-successful-migration-and-upgrade)** from etcd.
 
 1. Finally, if you have any calico resource manifests stored offline (e.g. files checked into code management systems), you should update them to the new API using the conversion tool:
-  **[Convert any offline {{site.prodname}} data from V1 to V3](/{{page.version}}/getting-started/openstack/upgrade/convert)** 
+  **[Convert any offline {{site.prodname}} data from V1 to V3](/getting-started/openstack/upgrade/convert)** 

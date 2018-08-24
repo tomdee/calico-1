@@ -15,7 +15,7 @@ operate.
 
 ## Enabling application layer policy
 
-**Prerequisite**: [{{site.prodname}} installed]({{site.url}}/{{page.version}}/getting-started/kubernetes/installation/).
+**Prerequisite**: [{{site.prodname}} installed]({{site.url}}/getting-started/kubernetes/installation/).
 
 Locate the manifest below that matches your installation method and apply it. After applying
 the manifest, your `{{site.nodecontainer}}` containers will restart.
@@ -24,7 +24,7 @@ the manifest, your `{{site.nodecontainer}}` containers will restart.
 
   ```bash
 kubectl apply -f \
-{{site.url}}/{{page.version}}/getting-started/kubernetes/installation/manifests/app-layer-policy/etcd/calico-networking/calico-node.yaml
+{{site.url}}/getting-started/kubernetes/installation/manifests/app-layer-policy/etcd/calico-networking/calico-node.yaml
 	```
 
 	> **Note**: You can also
@@ -35,18 +35,18 @@ kubectl apply -f \
 
   ```bash
 kubectl apply -f \
-{{site.url}}/{{page.version}}/getting-started/kubernetes/installation/manifests/app-layer-policy/kubernetes-datastore/calico-networking/calico-node.yaml
+{{site.url}}/getting-started/kubernetes/installation/manifests/app-layer-policy/kubernetes-datastore/calico-networking/calico-node.yaml
 	```
 
 	> **Note**: You can also
-	> [view the manifest in your browser]({{site.url}}/{{page.version}}/getting-started/kubernetes/installation/manifests/app-layer-policy/kubernetes-datastore/calico-networking/calico-node.yaml){:target="_blank"}.
+	> [view the manifest in your browser]({{site.url}}/getting-started/kubernetes/installation/manifests/app-layer-policy/kubernetes-datastore/calico-networking/calico-node.yaml){:target="_blank"}.
 	{: .alert .alert-info}
 
 - **{{site.prodname}} for policy and flannel for networking with the Kubernetes API datastore**:
 
   ```bash
 kubectl apply -f \
-{{site.url}}/{{page.version}}/getting-started/kubernetes/installation/manifests/app-layer-policy/kubernetes-datastore/flannel/calico-node.yaml
+{{site.url}}/getting-started/kubernetes/installation/manifests/app-layer-policy/kubernetes-datastore/flannel/calico-node.yaml
 	```
 
 	> **Note**: You can also
@@ -57,7 +57,7 @@ kubectl apply -f \
 
   ```bash
 kubectl apply -f \
-{{site.url}}/{{page.version}}/getting-started/kubernetes/installation/manifests/app-layer-policy/kubernetes-datastore/policy-only/calico-node.yaml
+{{site.url}}/getting-started/kubernetes/installation/manifests/app-layer-policy/kubernetes-datastore/policy-only/calico-node.yaml
 	```
 
 	> **Note**: You can also
@@ -91,11 +91,11 @@ with Istio. This step modifies the injector configuration to add Dikastes, a
 
    ```bash
    kubectl apply -f \
-   {{site.url}}/{{page.version}}/getting-started/kubernetes/installation/manifests/app-layer-policy/istio-inject-configmap.yaml
+   {{site.url}}/getting-started/kubernetes/installation/manifests/app-layer-policy/istio-inject-configmap.yaml
    ```
 
 	 > **Note**: You can also
-   > [view the manifest in your browser]({{site.url}}/{{page.version}}/getting-started/kubernetes/installation/manifests/app-layer-policy/istio-inject-configmap.yaml){:target="_blank"}.
+   > [view the manifest in your browser]({{site.url}}/getting-started/kubernetes/installation/manifests/app-layer-policy/istio-inject-configmap.yaml){:target="_blank"}.
    {: .alert .alert-info}
 
 If you would like to install a different version of Istio or inspect the changes
@@ -108,7 +108,7 @@ Apply the following manifest to configure Istio to query {{site.prodname}} for a
 
 ```bash
 kubectl apply -f \
-{{site.url}}/{{page.version}}/getting-started/kubernetes/installation/manifests/app-layer-policy/istio-app-layer-policy.yaml
+{{site.url}}/getting-started/kubernetes/installation/manifests/app-layer-policy/istio-app-layer-policy.yaml
 ```
 
 > **Note**: You can also
@@ -132,5 +132,5 @@ to take effect.
 **Note**: Envoy must be able to communicate with the
 `istio-pilot.istio-system` service. If you apply any egress policies to your
 pods, you *must* enable access. For example, you could
-[apply a network policy]({{site.url}}/{{page.version}}/getting-started/kubernetes/installation/manifests/app-layer-policy/allow-istio-pilot.yaml).
+[apply a network policy]({{site.url}}/getting-started/kubernetes/installation/manifests/app-layer-policy/allow-istio-pilot.yaml).
 {: .alert .alert-info}

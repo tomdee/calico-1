@@ -15,4 +15,4 @@ following conditions.
 - [**etcd**: A data migration attempt failed partway through, leaving the etcdv3 datastore
   with some, but not all of your etcvd2 data](#deleting-calico-data-from-etcdv3-after-a-partial-migration).
 
-{% include {{page.version}}/deleting-etcd-v2-v3-data.md %}
+{% include deleting-etcd-v2-v3-data.md %}

@@ -3,20 +3,20 @@ title: System requirements
 canonical_url: 'https://docs.projectcalico.org/v3.2/getting-started/kubernetes/requirements'
 ---
 
-{% include {{page.version}}/reqs-sys.md orch="Kubernetes" %}
+{% include reqs-sys.md orch="Kubernetes" %}
 
 ## Kubernetes requirements
 
 #### Supported versions
 
-We test {{site.prodname}} {{page.version}} against the following Kubernetes versions.
+We test {{site.prodname}} {{site.version}} against the following Kubernetes versions.
 
 - 1.9
 - 1.10
 - 1.11
 
 Other versions are likely to work, but we do not actively test {{site.prodname}}
-{{page.version}} against them.
+{{site.version}} against them.
 
 Application Layer Policy requires Kubernetes 1.9 or later.
 
@@ -55,4 +55,4 @@ for information on modifying the defaults.
 
 Application Layer Policy requires [Mutating Webhooks](https://kubernetes.io/docs/admin/admission-controllers/#mutatingadmissionwebhook-beta-in-19) to be enabled.
 
-{% include {{page.version}}/reqs-kernel.md %}
+{% include reqs-kernel.md %}

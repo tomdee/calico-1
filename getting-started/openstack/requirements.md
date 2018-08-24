@@ -3,7 +3,7 @@ title: System requirements
 canonical_url: 'https://docs.projectcalico.org/v3.2/getting-started/openstack/requirements'
 ---
 
-{% include {{page.version}}/reqs-sys.md orch="OpenStack" %}
+{% include reqs-sys.md orch="OpenStack" %}
 
 ## OpenStack requirements
 
@@ -13,13 +13,13 @@ previous release (back to Icehouse), on any operating system, independently of
 the deployment mechanism that is used to install it.
 
 However, we recommend using OpenStack Newton or later, and our active support
-and testing of {{site.prodname}} {{page.version}} with OpenStack is limited to
+and testing of {{site.prodname}} {{site.version}} with OpenStack is limited to
 the following versions:
 
 - Ocata
 - Pike
 
-{% include {{page.version}}/reqs-kernel.md %}
+{% include reqs-kernel.md %}
 
 ## Nova patch needed with Mitaka and earlier
 

@@ -5,7 +5,7 @@ canonical_url: 'https://docs.projectcalico.org/v3.2/usage/decommissioning-a-node
 
 ### About decommissioning nodes
 
-If you are running the [node controller]({{site.baseurl}}/{{page.version}}/reference/kube-controllers/configuration)
+If you are running the [node controller]({{site.baseurl}}/reference/kube-controllers/configuration)
 or using the Kubernetes API datastore, you do not need to manually decommission nodes.
 
 In other configurations, you may need to manually decommission a node for one
@@ -89,5 +89,5 @@ Below is an example of how to create a file of Nodes and delete them.
    calicoctl delete -f nodes_to_delete.yaml
    ```
 
-[Node resource reference]: {{site.baseurl}}/{{page.version}}/reference/calicoctl/resources/node
-[calicoctl setup]: {{site.baseurl}}/{{page.version}}/usage/calicoctl/install-and-configuration
+[Node resource reference]: {{site.baseurl}}/reference/calicoctl/resources/node
+[calicoctl setup]: {{site.baseurl}}/usage/calicoctl/install-and-configuration
