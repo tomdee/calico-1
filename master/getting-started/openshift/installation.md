@@ -3,7 +3,7 @@ title: Installing Calico on OpenShift
 canonical_url: 'https://docs.projectcalico.org/v2.6/getting-started/openshift/installation'
 ---
 
-Installation of {{site.prodname}} in OpenShift is integrated in openshift-ansible v3.6.
+TEST Installation of {{site.prodname}} in OpenShift is integrated in openshift-ansible v3.6.
 The information below explains the variables which must be set during
 during the standard [Advanced Installation](https://docs.openshift.org/latest/install_config/install/advanced_install.html#configuring-cluster-variables).
 
